@@ -1,0 +1,1074 @@
+/* LOADING SCREEN */
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00b7c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    margin-top: 76px;
+}
+
+.colorino {
+    color: #00838a;
+
+}
+
+/* css */
+.sfondoChiaro {
+    background-color: #A3E8EC;
+}
+
+.sfondoMedio {
+    background-color: #ECFEFF;
+}
+
+.first-color {
+    background: #ecfeff;
+}
+
+.second-color {
+    background: #00b7c2;
+}
+
+.third-color {
+    background: #128594;
+}
+
+.fourth-color {
+    background: #4ef037;
+}
+.fourth-color-txt {
+    color: #4ef037;
+}
+
+.veicoloCard {
+    background: #128594;
+    height: 7rem;
+    margin-top: 1rem;
+    transition: 0.2s;
+}
+
+.noLink a {
+    text-decoration: none;
+}
+
+.veicoloCard:hover {
+    color: #128494;
+    background: white;
+    height: 7rem;
+    margin-top: 1rem;
+    border: 2px solid #128494;
+}
+
+.veicoloCardNoDisp {
+    background: #12859468;
+    height: 7rem;
+    margin-top: 1rem;
+}
+
+.veicoloCardNoDisp:hover {
+    cursor: not-allowed;
+}
+
+
+
+.primaryText {
+    font-size: 14px;
+    color: #00B7C2;
+}
+
+.secondaryText {
+    font-size: 20px;
+    color: #128494;
+}
+
+.greyText{
+    color: #535353;
+}
+
+
+.bannerColor {
+    color: #094149;
+    font-size: 50px !important;
+    text-align: center;
+
+}
+
+.bannerPromoText {
+    color: #094148;
+}
+
+.primaryTextNS {
+
+    color: #00B7C2;
+}
+
+.secondaryTextNS {
+    color: #128494;
+    font-size: 50px;
+}
+
+
+.bannerPromo {
+    background: #00b7c2;
+    text-align: center;
+    padding: .10rem 0;
+}
+
+/* .bannerPromo h4 {
+    /* text-shadow: 0px 0px .5px #000000;
+
+} */
+
+.bannerAdmin {
+    background: url("https://cdn.motor1.com/images/mgl/y2gEAY/415:460:3925:2937/volvo-recharge-lineup.webp");
+    background-position: center;
+    height: 14rem;
+    padding: 3.2rem;
+    background-size: cover;
+}
+
+.imgAdmin {
+    opacity: 0.3;
+    width: 20rem;
+    height: auto;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                COLORI NAVBAR                               */
+/* -------------------------------------------------------------------------- */
+
+
+.navbar-custom {
+    background-color: #128594;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+
+.toast-container {
+    top: 5rem;
+    right: 50%;
+    transform: translateX(-50%);
+
+}
+
+.toast{
+    background-color: rgb(58, 150, 58);
+    text-align: center;
+    --bs-toast-max-width: 190px;
+}
+
+
+.heroText {
+    align-items: flex-start;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              SEZIONE ALTA SITO                             */
+/* -------------------------------------------------------------------------- */
+
+.monopattinoImg img {
+    height: 16rem;
+    width: auto;
+}
+
+.immagineScooter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 9rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 ABBONAMENTI                                */
+/* -------------------------------------------------------------------------- */
+
+
+.descrizioneAbbonamento {
+    color: white;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                             BANNER ABBONAMENTI                             */
+/* -------------------------------------------------------------------------- */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* height: 300px; */
+    /* min-height: 30vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .3);
+
+
+
+}
+
+.swiper-slide .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* height: 300px; */
+    /* min-height: 30vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+}
+
+.h-15 {
+    height: 15rem;
+}
+
+.h-5 {
+    height: 5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  PULSANTI                                  */
+/* -------------------------------------------------------------------------- */
+
+.btn {
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.primaryBtn {
+    font-size: 20px;
+    color: white;
+    background: #00B7C2;
+    /* blue1/100 */
+
+    border: 3px solid #ECFEFF;
+    border-radius: 4px;
+    transition: .15s;
+}
+
+.redBtn {
+    font-size: 20px;
+    color: white;
+    background: #535353;
+    /* blue1/100 */
+
+    border: 3px solid #ECFEFF;
+    border-radius: 4px;
+    transition: .15s;
+}
+
+.redBtn:hover {
+    border: 3px solid #535353;
+    background: white;
+    color: #535353;
+}
+
+.primaryBtn:hover {
+    border: 3px solid #128494;
+    background: white;
+    color: #128594;
+}
+
+.primaryBtnVerde:hover {
+    background: rgb(78, 240, 55);
+    color: #ffffff;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   SPACER                                   */
+/* -------------------------------------------------------------------------- */
+
+#spacer {
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-image: url('../img/spacerIndex.jpg');
+    height: 20rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spacer2 {
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-image: url('../img/autoElettrica2.jpg');
+    height: 20rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spacer3 {
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-image: url('../img/vwElettrica.jpg');
+    height: 20rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacerText {
+    font-size: 4rem;
+    color: white;
+
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                SEZIONE LISTA                               */
+/* -------------------------------------------------------------------------- */
+
+.sezioneLista {
+    font-size: 30px;
+    height: 6rem;
+    background-color: #00B7C2;
+    border: 4px solid #128594;
+    color: white;
+    margin: 1rem;
+    transition: .2s;
+}
+
+
+
+.sezioneLista:hover {
+    color: #128494;
+    background: white;
+    border: 5px solid #00B7C2;
+    cursor: pointer;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAPPA                                   */
+/* -------------------------------------------------------------------------- */
+
+.mappa,
+#map {
+    margin-top: 3rem;
+    height: 20rem;
+    width: auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    PROVE                                   */
+/* -------------------------------------------------------------------------- */
+
+#fotoVeicolo {
+    background-image: url(../img/vwElettrica.jpg);
+    min-height: 30rem;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 3%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                DISPONIBILITA                               */
+/* -------------------------------------------------------------------------- */
+
+.disponibile {
+    color: #4ef037;
+}
+
+.noDisponibile {
+    color: red;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                LISTA VEICOLI                               */
+/* -------------------------------------------------------------------------- */
+
+.immagine {
+    position: relative;
+}
+
+.immagine::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    /* right: 0; */
+    content: "";
+    clip-path: polygon(0 0, 52% 0, 70% 100%, 0% 100%);
+    background: #00b8c255;
+    z-index: -1;
+}
+
+.image {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto; */
+    max-width: 100%;
+    height: 11rem;
+}
+
+.immagineDisponibile {
+    /* height: 5rem; */
+    position: relative;
+}
+
+.immagineDisponibile::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    /* right: 0; */
+    content: "";
+    clip-path: polygon(0 0, 52% 0, 70% 100%, 0% 100%);
+    background: #00b8c255;
+    z-index: -1;
+}
+
+.descrizione {
+    color: #128494;
+    padding: .25rem 1rem;
+    text-decoration: none;
+    background: #00b8c21a;
+}
+
+
+.descrizioneDisponibile {
+    color: white;
+    transition: 0.2s;
+    height: 9rem;
+    background: linear-gradient(270deg, #00b7c2, #128594);
+    padding: .25rem 1rem;
+}
+
+.descrizioneDisponibile:hover {
+    border: 4px solid #00b7c2;
+    background: linear-gradient(90deg, #00b8c241, #ffffff);
+    color: #00b7c2;
+}
+
+.cartaDisponibile {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.cartaDisponibile a {
+    text-decoration: none;
+}
+
+.cartaNoDisponibile a {
+    text-decoration: none;
+}
+
+.cartaNoDisponibile {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: not-allowed;
+}
+
+.contenitoreDisponibile a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s;
+
+}
+
+/* .contenitoreDisponibile a:hover{
+    color: #00b7c2;
+
+  } */
+
+/* .contenitoreDisponibile a:hover{
+    color: #00b7c2;
+
+  } */
+
+.contenitoreNoDisponibili a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: #128594;
+    cursor: not-allowed;
+}
+
+.modello {
+    font-size: 30px;
+}
+
+.desc {
+    font-size: 15px;
+}
+
+.tipo {
+    font-size: 15px;
+}
+
+.disponibilitaSI {
+    font-size: 20px;
+    color: rgb(57, 212, 57);
+}
+
+.disponibilitaNO {
+    font-size: 20px;
+    color: red;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+.footerColor {
+    background: #252A41;
+    padding: 1.5rem 0;
+}
+
+.boldTitle{
+    font-weight: 800;
+}
+
+
+.fCol {
+    background-color: #40424b;
+}
+
+/* .footerApp{
+     display: flex;
+    align-items: center; 
+  }
+*/
+
+.appleImg {
+    margin: 0 0;
+    height: 4rem;
+    width: auto;
+}
+
+.googleImg {
+    height: 4rem;
+    width: auto;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.cookie a {
+    color: white;
+}
+
+.cookie {
+    padding: 1.5rem 0;
+}
+
+.cookie p {
+    margin-bottom: 0;
+}
+
+.cookie a:hover {
+    color: #020d3e;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  ABOUT US                                  */
+/* -------------------------------------------------------------------------- */
+
+.paragrafo {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin: 2rem 0;
+}
+
+.paragrafoTx {
+    color: #00B7C2;
+    font-weight: 800;
+}
+
+.fotoSezione img {
+    width: 400px;
+    margin: 2rem 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  ACCORDION                                 */
+/* -------------------------------------------------------------------------- */
+
+
+.transition,
+.accordion ul li i:before,
+.accordion ul li i:after,
+p {
+    transition: all 0.5s ease-in-out;
+}
+
+.flipIn,
+.accordion ul li,
+h2 {
+    animation: flipdown 0.5s ease both;
+}
+
+.no-select,
+h2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.accordion {
+    min-height: 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 90px 0;
+    transform: translate(-50%, 0);
+    /* box-shadow: 0 10px 0 0 #128494 inset; */
+
+
+    padding: 30px;
+}
+
+@media (max-width: 550px) {
+    .accordion {
+        box-sizing: border-box;
+        transform: translate(0, 0);
+        max-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        left: 0;
+    }
+}
+
+
+
+h1,
+h2 {
+    color: #128594;
+}
+
+.accordion h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 3px;
+    /* font-weight: 100; */
+}
+
+.accordion h2 {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    background-color: #fefffa;
+    margin: 0;
+    cursor: pointer;
+}
+
+.accordion p {
+    color: rgba(48, 69, 92, 0.8);
+    /* font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1px; */
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+}
+
+.accordion ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-bottom: 1px solid rgba(18, 133, 148, 0.534);
+}
+
+.accordion ul li:first-child {
+    border-top: 1px solid rgba(18, 133, 148, 0.534);
+}
+
+.accordion ul li:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.accordion ul li:nth-of-type(2) {
+    animation-delay: 0.75s;
+}
+
+.accordion ul li:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.accordion ul li:last-of-type {
+    padding-bottom: 0;
+}
+
+.accordion ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+}
+
+.accordion li i:before,
+.accordion ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #128594;
+    width: 3px;
+    height: 9px;
+}
+
+.accordion ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.accordion ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.accordion ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.accordion ul li input[type=checkbox]:checked~p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+
+.accordion ul li input[type=checkbox]:checked~i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.accordion ul li input[type=checkbox]:checked~i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SIGNUP                                   */
+/* -------------------------------------------------------------------------- */
+
+/* .containerSignup {
+    height: 45rem;
+} */
+
+/* -------------------------------------------------------------------------- */
+/*                               TABELLA TARIFFE                              */
+/* -------------------------------------------------------------------------- */
+
+.table-striped>tbody>tr:nth-child(2n+1)>td,
+.table-striped>tbody>tr:nth-child(2n+1)>th {
+    background-color: rgba(0, 184, 194, 0.158);
+    color: #003f4e;
+
+
+}
+
+/* #003f4e */
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAPPA                                   */
+/* -------------------------------------------------------------------------- */
+
+#map {
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Veicolo singolo                              */
+/* -------------------------------------------------------------------------- */
+
+.font25 {
+    font-size: 25px;
+}
+
+.scritta {
+    background: #00b8c230;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  ACCORDION                                 */
+/* -------------------------------------------------------------------------- */
+
+
+
+.fs-2-5 {
+    font-size: 2.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Area utente                                */
+/* -------------------------------------------------------------------------- */
+
+.colBg {
+    background: #00b8c241;
+}
+
+
+.fs-2-5 {
+    font-size: 2.5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Lista Veicoli                               */
+/* -------------------------------------------------------------------------- */
+
+.titoliDisponibili {
+    background-color: #00b8c240;
+}
+
+.titoloCard {
+    background-color: #ffffff70;
+    min-height: 20rem;
+    margin: .25rem;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    LOGIN                                   */
+/* -------------------------------------------------------------------------- */
+
+.imgBgLogin {
+    background: url('/img/vwElettrica.jpg');
+    position: relative;
+    background-position: center top;
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+}
+
+.imgBgLogin::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+.conColore {
+
+    background-color: #00B7C2;
+    border: 4px solid #128494;
+}
+
+.dimLogin {
+    height: 40rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  pagamento                                 */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Aggiunta veicolo                              */
+/* -------------------------------------------------------------------------- */
+
+/* Nascondi le opzioni con valore "BMW I3-2007", "Golf GTE-2019" e "Smart FortTwo EQ 2016" quando il valore di #alimentazione è "ibrida" */
+#alimentazione[value="ibrida"]~#modello [value="BMW I3-2007"],
+#alimentazione[value="ibrida"]~#modello [value="Golf GTE-2019"],
+#alimentazione[value="ibrida"]~#modello [value="Smart FortTwo EQ 2016"] {
+    display: none;
+}
+
+/* Nascondi le opzioni con valore "Mercedes-Benz GLC Class 2018" e "Toyota C-HR 2021" quando il valore di #alimentazione è "elettrica" */
+#alimentazione[value="elettrica"]~#modello [value="Mercedes-Benz GLC Class 2018"],
+#alimentazione[value="elettrica"]~#modello [value="Toyota C-HR 2021"] {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.nohidden {
+    display: block;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Altro                                   */
+/* -------------------------------------------------------------------------- */
+
+.colorePrenotazioni {
+    background: #05494d23;
+}
+
+.colPrimaPrenotazione {
+    background: #00b8c21a;
+}
+
+
+.coloretto {
+    color: #128594;
+}
+
+
+.fontino {
+    font-size: larger;
+}
+
+.ombra{
+    text-shadow: 2px 2px #000000;
+}
+
+.rossetto {
+    color: #ac0000;
+}
+
+
+:root {
+    --swiper-theme-color: #00b7c2 !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                       Correzione a in tutte le pagine                      */
+/* -------------------------------------------------------------------------- */
+
+.aFake {
+    color: #98baeb !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.logout  {
+    cursor: pointer;
+}
+
+.noData{
+    opacity: .3;
+    border:18px solid #535353;
+    padding: 7rem 7rem;
+}
+
+.navbar{
+    z-index: 1091;
+}
+
+.modalePaginaIns{
+    top: 5rem;
+}
+
+#logoutModal{
+    z-index: 2000;
+}

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page of the Share Vehicle sharing company">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                FOGLI CSS                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="css/swiperHero.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueryStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <title>Vehicle sharing</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+
+<body>
+
+
+
+
+    <div id="loading-screen">
+        <img src="/img/logoGiusto.svg" alt="logo" height="200rem" width="200rem">
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark borderNav third-color fixed-top">
+            <!-- inizio navbar -->
+
+            <div class="container-lg">
+                <!-- inizio container navbar -->
+
+                <div class="navbar-brand" id="eg">
+                    <img src="/img/logoGiusto.svg" alt="logo" width="50" height="50">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-dark text-bg-dark w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- inizio offcanvas -->
+
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel"></h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <!-- inizio offcanvas-body -->
+
+                        <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3" id="navbar">
+                            <!-- inizio elementi navbar -->
+
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                <!-- possiamo togliere mettendo il logo diretto alla home -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/tariffe">Tariffe</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/faq">FAQ</a>
+                                <!-- tipi diversi di veicoli disp -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/abbonamenti">Abbonamenti</a>
+                                <!-- libero profesionista, abbonamenti, parcheggi -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/aboutUs">Chi siamo</a>
+                                <!-- mappa con veicoli disponibili, visibile a tutti -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/listaVeicoli">Veicoli</a>
+                                <!-- mettere i loghi delle roba si soft skill -->
+                            </li>
+                            <!-- <li class="nav-item ms-auto ms-lg-0">
+                            <a class="nav-link" href="/login">Accedi</a>
+                            </li> -->
+                        </ul> <!-- fine elementi navbar -->
+                    </div>
+
+                </div> <!-- fine offcanvas-body -->
+                <!-- fine offcanvas -->
+            </div> <!-- fine container navbar -->
+        </nav> <!-- fine navbar -->
+    </header>
+    <section id="banner" class="bannerPromo">
+        <h4 class="bannerPromoText">Registrati oggi per avere 2 corse in omaggio!</h4>
+    </section>
+
+
+    <main class="position-relative">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                  HERO                                   -->
+        <!-- ----------------------------------------------------------------------- -->
+
+
+        <div class="toast-container p-3 top-0 start-50">
+            <div class="toast text-white" data-bs-autohide="false">
+                <div class="toast-body">
+                    Sei stato disconnesso.
+                </div>
+            </div>
+        </div>
+
+
+        <div id="hero">
+            <div class="swiper heroSwipe">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(/img/teslaRossa.jpg);">
+                        <div class="overlay">
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-lg-12 col-12 d-flex justify-content-center">
+                                        <div class="heroText">
+                                            <h3 class="d-flex ps-1"><span class="heroTitle">SharE!</span></h3>
+                                            <h3 class="heroSubtitle">La flotta di <span class="primaryTextNS">veicoli</span> a impatto 0 è qui!</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-lazy" style="background-image: url(/img/vwElettrica.jpg);">
+                        <div class="overlay2">
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-lg-12 col-12 d-flex justify-content-center">
+                                        <div class="heroText">
+                                            <h3 class="d-flex"><span class="heroTitle">Prenota!</span></h3>
+                                            <h3 class="heroSubtitle"> <span class="primaryTextNS">Trova, </span>scansiona il QR e<span class="primaryTextNS"> vai!</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-lazy" style="background-image: url(/img/porscheElettrica.jpg); background-position: center center;">
+                        <div class="overlay">
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-lg-12 col-12 d-flex justify-content-center">
+                                        <div class="heroText">
+                                            <h3 class="d-flex"><span class="heroTitle">Risparmia!</span></h3>
+                                            <h3 class="heroSubtitle">Paghi solo<span class="primaryTextNS"> la corsa!</span> Niente <span class="primaryTextNS">rifornimenti!</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="swiper-slide"><img src="../img/porscheElettrica.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/vwElettrica.jpg" alt=""></div> -->
+
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                            SEZIONE ALTA SITO                            -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="primaryText"></div>
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                        Perchè usare SharE?
+                    </h2>
+                    <div class="secondaryText greyText">SharE conviene e ha 0 impatto sull'emissioni di CO2</div>
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                        Come funziona SharE?
+                    </h2>
+                    <div class="secondaryText greyText">Prenota un veicolo e goditi il viaggio!</div>
+                    <!-- <h2 class="primaryText mt-4 d-flex align-items-center d-lg-flex d-none d-md-flex font25">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                        Usi SharE quotidianamente e vuoi risparmiare? Semplice, abbonati!
+                    </h2> -->
+
+                </div>
+                <div class="col-md-6 d-md-flex monopattinoImg d-flex justify-content-center align-content-center mt-5 mt-md-0">
+                    <img class="" src="/img/Monopattino.png" alt="e-scooter">
+                </div>
+            </div>
+            <div class="secondaryText mt-5 mb-md-5 fs-2-5 text-center">Ecco i nostri abbonamenti</div>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                           ABBONAMENTI STATICI                           -->
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="d-none d-lg-inline d-flex justify-content-around">
+                <div id="abbonamentiPc" class="abbonamentiPc row d-flex justify-content-around mt-3 text-white">
+                    <div class="abbonamento col-11 col-lg-3 d-flex flex-column justify-content-between conColore">
+                        <div class="descrizioneAbbonamento">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Giornaliero</h3>
+                            </div>
+                            <p>2 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+                            <h3>A soli 5,90€</h3>
+                        </div>
+                        <div class="button d-flex justify-content-end align-items-end mb-3">
+                            <div class="pulsanteAbbonati "><a href="/pagamento?id=1" class="btn primaryBtn " type="button">Abbonati!</a></div>
+                        </div>
+                    </div>
+                    <div class="abbonamento col-11 col-lg-3 d-flex flex-column justify-content-between conColore">
+                        <div class="descrizioneAbbonamento">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Settimanale</h3>
+                            </div>
+                            <p>14 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+                            <h3>A soli 9,90€</h3>
+                        </div>
+                        <div class="button d-flex justify-content-end align-items-end mb-3">
+                            <div class="pulsanteAbbonati"><a href="/pagamento?id=2" class="btn primaryBtn " type="button">Abbonati!</a></div>
+                        </div>
+                    </div>
+                    <div class="abbonamento col-11 col-lg-3 d-flex flex-column justify-content-between conColore">
+                        <div class="descrizioneAbbonamento">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Mensile</h3>
+                            </div>
+                            <p>60 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+                            <h3>A soli 29,90€</h3>
+                        </div>
+                        <div class="button d-flex justify-content-end align-items-end mb-3">
+                            <div class="pulsanteAbbonati "><a href="/pagamento?id=3" class="btn primaryBtn " type="button">Abbonati!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                           ABBONAMENTI SWIPER                            -->
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="swiper mySwiper d-block d-lg-none mt-4 mb-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="abbonamento col-11 col-lg-3 h-15 text-white conColore">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Giornaliero</h3>
+                            </div>
+                            <div class="descrizioneAbbonamento">
+                                <p>2 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+
+                                <h3 class="whiteText">A soli 5,90€</h3>
+
+                                <div class="button d-flex justify-content-center">
+                                    <a href="/pagamento?id=1" class="btn primaryBtn" type="button">Abbonati!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="abbonamento col-11 col-lg-3 h-15 text-white conColore">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Settimanale</h3>
+                            </div>
+                            <div class="descrizioneAbbonamento">
+                                <p>14 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+
+                                <h3 class="whiteText">A soli 9,90€</h3>
+
+                                <div class="button d-flex justify-content-center">
+                                    <a href="/pagamento?id=2" class="btn primaryBtn" type="button">Abbonati!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="abbonamento col-11 col-lg-3 h-15 text-white conColore">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Mensile</h3>
+                            </div>
+                            <div class="descrizioneAbbonamento">
+                                <p>60 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+
+                                <h3 class="whiteText">A soli 29,90€</h3>
+
+                                <div class="button d-flex justify-content-center">
+                                    <a href="/pagamento?id=3" class="btn primaryBtn" type="button">Abbonati!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                        FINE SEZIONE ABBONAMENTI                         -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- SPACER -->
+        <section id="spacer"></section>
+        <div class="container">
+            <div class="row mb-3 mt-5 d-flex align-items-center">
+
+                <div class="col-12 col-md-6">
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>Devi fare pochi km di strada?</h2>
+                    <div class="secondaryText greyText">Trova il veicolo più adatto alle tue esigenze e più vicino
+                        a te!</div>
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>Paura delle ZTL?</h2>
+                    <div class="secondaryText greyText">Prendi un monopattino o bicicletta e raggiungi la tua destinazione!</div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center mt-5 mt-md-0">
+                    <img src="/img/e-bike.png" alt="e-bike" class="img-fluid">
+                </div>
+
+            </div>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                         SEZIONE ELENCHI VEICOLI                         -->
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="secondaryText mt-5 mt-lg-5 mb-md-5 mb-5 fs-2-5 text-center">Ecco i nostri veicoli in strada!</div>
+            <div class="row d-flex justify-content-evenly mt-4">
+                <a href="/listaVeicoli?alimentazione=elettrica" class="sezioneLista col-11 col-md-5 m-1 mb-5 d-flex justify-content-center align-items-center text-decoration-none">
+                    Auto Elettriche
+                </a>
+                <a href="/listaVeicoli?alimentazione=ibride" class="sezioneLista col-11 col-md-5 m-1 mb-5 d-flex justify-content-center align-items-center text-decoration-none">
+                    Auto Ibride
+                </a>
+                <a href="/listaVeicoli?tipo=MONOPATTINI" class="sezioneLista col-11 col-md-5 m-1 mb-5 d-flex justify-content-center align-items-center text-decoration-none text-center">
+                    Monopattini Elettrici
+                </a>
+                <a href="/listaVeicoli?tipo=BICICLETTE" class="sezioneLista col-11 col-md-5 m-1 mb-5 d-flex justify-content-center align-items-center text-decoration-none">
+                    Bici Elettriche
+                </a>
+
+            </div>
+        </div>
+        <section id="spacer2"></section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                           SEZIONE TESTO BASSA                           -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="container">
+            <div class="row mb-3 d-flex align-items-center">
+                <div class=" col-12 col-lg-6">
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>Ma in caso di danni o veicoli danneggiati?</h2>
+                    <div class="secondaryText greyText">Per ogni eventuale danno o guasti o attività illecite sui
+                        nostri mezzi o con i nostri veicoli, puoi mandarci una segnalazione!</div>
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>Posso vedere dove sono i veicoli in città?</h2>
+                    <div class="secondaryText greyText">Per ogni veicolo è segnata la posizione in tempo reale in mappa, apri la scheda del singolo veicolo o vedi qua sotto per trovarlo nella tua città!</div>
+                </div>
+                <div class="immagineSezioneBassa col-12 col-lg-6 ps-5 ps-lg-0">
+                    <img src="/img/imgVeicoli/bmwElettrica.png" alt="BmwImage" class="img-fluid w-100 ms-md-5">
+                </div>
+            </div>
+            <div class="secondaryText  mt-5 mb-3 fs-2-5 text-center">Ecco le posizioni dei veicoli!</div>
+
+        </div>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                              SEZIONE MAPPA                              -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="mappa">
+            <div id="map"></div>
+        </div>
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             SEZIONE GRAFICO                             -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="container">
+            <div class="row mt-5 mb-5 pt-5 pb-5">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="primaryText mt-4 d-flex align-items-center font25"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>Il car sharing per chi vuole fare la differenza</h2>
+                    <p class="secondaryText greyText">Il nostro grafico mostra come l'utilizzo dei veicoli elettrici del nostro servizio di Vehicle sharing riduce significativamente <span class="paragrafoTx">le emissioni di anidride carbonica</span>. I dati sono chiari: quanto più i nostri veicoli vengono utilizzati, tanto meno CO2 viene rilasciata nell'atmosfera. Scegliere i nostri veicoli elettrici per i tuoi spostamenti è quindi una <span class="paragrafoTx">scelta sostenibile</span>, che contribuisce a proteggere l'ambiente e a ridurre l'impatto delle attività umane sull'ecosistema. Con il nostro servizio di Vehicle sharing, puoi <span class="paragrafoTx">muoversi in modo responsabile</span> senza rinunciare alla comodità e alla praticità dei mezzi di trasporto privati.</p>
+                </div>
+                <div class="col-lg-6 mt-2">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer class="footerColor">
+        <!-- da aggiungere altre voci -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-white">
+                    <h3 class="mb-3">Scarica la nostra app</h3>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-6 "><img src="/img/Download_on_the_App_Store_Badge.svg" class="appleImg img-fluid w-75" alt="storeIphoneLogo"></div>
+                        <div class="col-6"><img src="/img/Google_Play_Store_badge_EN.svg" class="googleImg img-fluid w-75" alt="storeAndroidLogo"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-white">
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <h3 class="">Informazioni</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/aboutUs" class="aFake text-center">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="/tariffe" class="aFake text-center">Tariffe</a>
+                                </li>
+                                <li>
+                                    <a href="/faq" class="aFake text-center">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/abbonamenti" class="aFake text-center">Condizioni d'uso</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 ">
+                            <h3 class="mb-3">Social</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.instagram.com" class="aFake">
+                                        <i class="bi bi-instagram">Instagram</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" class="aFake">
+                                        <i class="bi bi-twitter">Twitter</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com" class="aFake">
+                                        <i class="bi bi-meta">Meta</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.telegram.com" class="aFake">
+                                        <i class="bi bi-telegram">Telegram</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- da mettere tutto in div separati, elemento per elemento -->
+                </div>
+            </div>
+            <div class="row text-white mt-4">
+                <div class="col-lg-6">
+                    <h3>Contattaci:</h3>
+                    <hr>
+                    <div class=" mb-4">
+                        <p class="boldTitle">Numeri Utili</p>
+                        <p>Numero sede italiana: <span class="aFake">0114562378</span>
+                        </p>
+                        <p>Numero verde: <span class="aFake"> 800 400 736</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Dove Trovarci</h3>
+                    <hr>
+                    <div>
+                        <p class="boldTitle">Sedi e indirizzi</p>
+                        <p>Sede Italiana: <span class="aFake">Corso Vittorio Emanuele II 157/d Torino (TO)</span>
+                        </p>
+                        <p>Sede Centrale: <span class="aFake">Thàmova 116 Karlin, Cechia</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <div class="cookie d-flex justify-content-center fCol">
+        <div class="text-white">
+            <p><span class="aFake">Cookie</span> | <a href="/faq" class="aFake">Privacy Policy</a> | <a href="/abbonamenti" class="aFake">Condizioni d'uso</a></p>
+        </div>
+
+    </div>
+
+
+
+    <div id="modLogout"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/heroSwiper.js"></script>
+    <script src="/js/session.js"></script>
+    <script src="js/mappaHome.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <script src="/js/indexEg.js"></script>
+
+</body>
+
+</html>

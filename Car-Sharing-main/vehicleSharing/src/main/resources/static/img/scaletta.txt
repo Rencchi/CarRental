@@ -1,0 +1,43 @@
+
+# ---------------------------------------------------------------------------- #
+#                                     ABEL                                     #
+# ---------------------------------------------------------------------------- #
+
+
+
+
+1 HOME -> Parlare della pagina Home e delle sue funzionalità ()
+
+2 Tariffe - Abbonamenti - FAQ - Chi siamo -> Solo vedere, per la pagina FAQ soffermarsi sul form della domanda ()
+
+3 Veicoli - VeicoloSingolo -> Generale sulla pagina soffermandosi sulla funzionalità del select e della dinamicità 
+
+
+
+
+# ---------------------------------------------------------------------------- #
+#                                    ADRIAN                                    #
+# ---------------------------------------------------------------------------- #
+
+
+
+
+4 Accesso/Registrazione -> Far vedere entrambi i form con gli eventuali errori soffermandosi anche sul "Ricordami" e spiegare le 3 tipologie di utente
+
+5 Prenotazione veicolo - AreaUtente -> Dimostrare la prenotazione funzionante e l'eliminazione della prenotazione, il fatto che due prenotazioni si accavalla l'ultima fatta in alto
+
+
+
+
+# ---------------------------------------------------------------------------- #
+#                                     LUCA                                     #
+# ---------------------------------------------------------------------------- #
+
+
+
+
+6 Area Admin - Form Inserimento veicolo - DataTable -> Fare vedere il form aggiunta / rimozione veicolo
+
+7 LogOut -> Fare il logout facendo vedere il toast e la pagina errore quando si cerca di andare forzatamente in una pagina destinata all'amministratore "/dashboard"
+
+8 Easter Egg

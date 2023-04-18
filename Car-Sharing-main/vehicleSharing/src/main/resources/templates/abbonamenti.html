@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abbonamenti page of the Share Vehicle sharing company">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaQueryStyle.css">
+    <link rel="stylesheet" href="css/swiperHero.css">
+    <!-- <link rel="stylesheet" href="/css/abbonamenti.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Abbonamenti</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark borderNav third-color fixed-top">
+            <!-- inizio navbar -->
+
+            <div class="container-lg">
+                <!-- inizio container navbar -->
+
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logoGiusto.svg" alt="logo" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-dark text-bg-dark w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- inizio offcanvas -->
+
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel"></h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <!-- inizio offcanvas-body -->
+
+                        <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3" id="navbar">
+                            <!-- inizio elementi navbar -->
+
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/">Home</a>
+                                <!-- possiamo togliere mettendo il logo diretto alla home -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/tariffe">Tariffe</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/faq">FAQ</a>
+                                <!-- tipi diversi di veicoli disp -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link active" aria-current="page" href="/abbonamenti">Abbonamenti</a>
+                                <!-- libero profesionista, abbonamenti, parcheggi -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/aboutUs">Chi siamo</a>
+                                <!-- mappa con veicoli disponibili, visibile a tutti -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/listaVeicoli">Veicoli</a>
+                                <!-- mettere i loghi delle roba si soft skill -->
+                            </li>
+
+                        </ul> <!-- fine elementi navbar -->
+                    </div>
+
+                </div> <!-- fine offcanvas-body -->
+                <!-- fine offcanvas -->
+            </div> <!-- fine container navbar -->
+        </nav> <!-- fine navbar -->
+    </header>
+
+
+    <main class="position-relative">
+        <!-- HERO -->
+        <div class="toast-container p-3 top-0 start-50">
+            <div class="toast text-white" data-bs-delay="1500">
+                <div class="toast-body">
+                    Sei stato disconnesso.
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="swiper heroSwipe">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(/img/porscheElettrica.jpg); background-position: center center;">
+                        <div class="overlay">
+                            <div class="heroText">
+                                <h3 class="d-flex justify-content-start"><span class="heroTitle">Abbonati!</span></h3>
+                                <h3 class="heroSubtitle">
+                                    Per te <span class="primaryTextNS"> vantaggi esclusivi</span> ogni <span class="primaryTextNS">mese</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEZIONE SITO MAIN -->
+        <div class="container">
+            <div class="mt-5 mb-5">
+                <h1 class="secondaryTextNS text-center">Abbonamenti SharE</h1>
+            </div>
+            <div class="titoloAbbonamenti">
+                <h2 class="primaryText d-flex align-items-center fs-2 mt-5 mb-lg-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>Abbonamenti Principali</h2>
+            </div>
+            <div class="d-none d-lg-inline d-flex justify-content-between mb-5">
+                <div id="abbonamentiPc" class="abbonamentiPc row text-white d-flex justify-content-around mt-3">
+                    <div class="abbonamento col-11 col-lg-3 d-flex flex-column justify-content-between conColore">
+                        <div class="descrizioneAbbonamento">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Giornaliero</h3>
+                            </div>
+                            <p>2 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+                            <h3 class="whiteText">A soli 5,90€</h3>
+                        </div>
+                        <div class="button d-flex justify-content-end align-items-end mb-3">
+                            <div class="pulsanteAbbonati "><a href="/pagamento?id=1" class="btn primaryBtn " type="button">Abbonati!</a></div>
+                        </div>
+                    </div>
+                    <div class="abbonamento col-11 col-lg-3 d-flex flex-column justify-content-between conColore">
+                        <div class="descrizioneAbbonamento">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Settimanale</h3>
+                            </div>
+                            <p>14 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+                            <h3 class="whiteText">A soli 9,90€</h3>
+                        </div>
+                        <div class="button d-flex justify-content-end align-items-end mb-3">
+                            <div class="pulsanteAbbonati"><a href="/pagamento?id=2" class="btn primaryBtn " type="button">Abbonati!</a></div>
+                        </div>
+                    </div>
+                    <div class="abbonamento col-11 col-lg-3 d-flex flex-column justify-content-between conColore">
+                        <div class="descrizioneAbbonamento">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Mensile</h3>
+                            </div>
+                            <p>60 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+                            <h3>A soli 29,90€</h3>
+                        </div>
+                        <div class="button d-flex justify-content-end align-items-end mb-3">
+                            <div class="pulsanteAbbonati "><a href="/pagamento?id=3" class="btn primaryBtn " type="button">Abbonati!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper d-block d-lg-none mt-4 mb-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="abbonamento col-11 col-lg-3 h-15 text-white conColore">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Giornaliero</h3>
+                            </div>
+                            <div class="descrizioneAbbonamento">
+                                <p>2 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+
+                                <h3 class="whiteText">A soli 5,90€</h3>
+
+                                <div class="button d-flex justify-content-center">
+                                    <a href="/pagamento?id=1" class="btn primaryBtn" type="button">Abbonati!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="abbonamento col-11 col-lg-3 h-15 text-white conColore">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Settimanale</h3>
+                            </div>
+                            <div class="descrizioneAbbonamento">
+                                <p>14 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+
+                                <h3 class="whiteText">A soli 9,90€</h3>
+
+                                <div class="button d-flex justify-content-center">
+                                    <a href="/pagamento?id=2" class="btn primaryBtn" type="button">Abbonati!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="abbonamento col-11 col-lg-3 h-15 text-white conColore">
+                            <div class="titoloAbbonamento pt-3">
+                                <h3>Abbonamento Mensile</h3>
+                            </div>
+                            <div class="descrizioneAbbonamento">
+                                <p>60 corse con qualsiasi mezzo di 30 minuti ciascuna</p>
+
+                                <h3 class="whiteText">A soli 29,90€</h3>
+
+                                <div class="button d-flex justify-content-center">
+                                    <a href="/pagamento?id=3" class="btn primaryBtn" type="button">Abbonati!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <section class="d-lg-none d-block" id="spacer3"></section>
+        <div class="container">
+            <!-- <div class="d-flex d-lg-none col-lg-6 col-12 d-flex justify-content-center justify-content-md-around">
+                
+                <img src="/img/e-bike.png" alt="e-bike" height="190px" width="auto">
+            </div> -->
+            <div class="pt-lg-5">
+                <h2 class="primaryText d-flex align-items-center fs-2 mt-lg-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>Vantaggi</h2>
+            </div>
+            <div class="sezione row d-flex justify-content-between align-items-center">
+
+                <div class="paragrafo col-lg-6 col-12 greyText">Nonostante il nostro servizio di car sharing offra già ottime tariffe per
+                    il noleggio di monopattini, biciclette e auto, con gli abbonamenti è possibile ottenere prezzi ancora
+                    migliori. Gli abbonamenti offrono la comodità di poter utilizzare il nostro servizio a un prezzo inferiore
+                    rispetto al noleggio orario. Se hai bisogno di utilizzare il nostro servizio con regolarità, un abbonamento
+                    potrebbe essere la soluzione perfetta per te. </div>
+                <div class="d-none d-lg-flex col-lg-6 col-12 d-flex justify-content-center">
+
+                    <img src="/img/e-bike.png" alt="pragaImage" height="300px" width="auto">
+                </div>
+            </div>
+
+            <!-- --------------------- SEZIONE SCHEDE ABBONAMENTI ---------------------- -->
+
+
+        </div>
+        <section id="spacer"></section>
+
+
+
+
+
+        <div class="container">
+            <div class="titoloAbbonamenti">
+                <h2 class="primaryText d-flex align-items-center fs-2 mt-5 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>Abbonamenti secondari</h2>
+            </div>
+
+            <div class="tabellaAbbonamenti mb-5">
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                DA FORMATTARE MEGLIO E SCEGLIERE I COLORI                -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <table class="table table-striped coloretto">
+                    <thead>
+                        <tr>
+                            <th>Corse incluse</th>
+                            <th>Prezzo</th>
+                            <th>Vantaggi aggiuntivi</th>
+                            <th>Tipo di pass</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3 corse al giorno</td>
+                            <td>5,90&nbsp;€</td>
+                            <td>Sconto sulla tariffa base del 5%</td>
+                            <td>SharE Daily Pass</td>
+                        </tr>
+                        <tr>
+                            <td>10 corse a settimana</td>
+                            <td>9,90&nbsp;€</td>
+                            <td>Sconto del 5% su ogni corsa aggiuntiva, sconto sulla tariffa base del 7,5%</td>
+                            <td>SharE Weekly Pass</td>
+                        </tr>
+                        <tr>
+                            <td>30 corse al mese</td>
+                            <td>29,90&nbsp;€</td>
+                            <td>Sconto del 10% su ogni corsa aggiuntiva, accesso anticipato alle nuove offerte, sconto sulla tariffa
+                                base del 10%</td>
+                            <td>SharE Monthly Pass</td>
+                        </tr>
+                        <tr>
+                            <td>50 corse al mese</td>
+                            <td>49,90&nbsp;€</td>
+                            <td>Sconto del 15% su ogni corsa aggiuntiva, accesso anticipato alle nuove offerte, sconto sulla tariffa
+                                base del 12,5%, accesso a parcheggi riservati</td>
+                            <td>SharE Plus Pass</td>
+                        </tr>
+                        <tr>
+                            <td>80 corse al mese</td>
+                            <td>79,90&nbsp;€</td>
+                            <td>Sconto del 20% su ogni corsa aggiuntiva, accesso anticipato alle nuove offerte, sconto sulla tariffa
+                                base del 15%, accesso a parcheggi riservati, assistenza clienti prioritario</td>
+                            <td>SharE Premium Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Illimitate corse al mese</td>
+                            <td>99,90&nbsp;€</td>
+                            <td>Sconto del 25% su ogni corsa aggiuntiva, accesso anticipato alle nuove offerte, sconto sulla tariffa
+                                base del 20%, accesso a parcheggi riservati, assistenza clienti prioritario, accesso a veicoli di alta
+                                gamma</td>
+                            <td>SharE Ultimate Pass</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <a name="" id="" class="btn btn-primary primaryBtn mt-5" href="/pagamento?id=3" role="button">Abbonati ora</a>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <section id="spacer2"></section>
+
+    <main style="margin-top: 8rem">
+
+
+        <div class="container mt-5">
+            <h2 class="primaryText mt-4 d-flex align-items-center fs-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>Risparmia con i nostri vantaggi</h2>
+            <div class="sezione row d-flex justify-content-between align-items-center">
+                <div class="paragrafo col-lg-6 col-12">
+                    <div class="greyText">
+                        Offriamo questi abbonamenti perché crediamo che il nostro servizio di car sharing possa essere utilizzato in modo ancora più conveniente e senza pensieri dai nostri clienti. Sappiamo che molti di voi utilizzano il nostro servizio per spostamenti quotidiani o settimanali, e vogliamo offrire loro la possibilità di sottoscrivere un abbonamento che li faccia risparmiare <span class="paragrafoTx">tempo</span> e <span class="paragrafoTx">denaro</span>.
+                    </div>
+                    <div class="fotoSezione col-12 d-flex d-lg-none d-md-none justify-content-center d-lg-flex">
+                        <img src="/img/tempo.jpg" alt="imgTimeMoney" width="100%" height="auto">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12 greyText">
+                            Inoltre, vogliamo premiare la fedeltà dei nostri clienti offrendo loro vantaggi esclusivi che aumentano con l'aumentare della durata dell'abbonamento. Speriamo che questi abbonamenti possano soddisfare le esigenze dei nostri clienti e li invitiamo a scegliere quello che fa al caso loro.
+                        </div>
+                        <div class="fotoSezione col-12 col-md-5 ms-5 col-lg-12 d-none d-lg-none d-md-flex justify-content-center p-5 d-none d-lg-flex">
+                            <img src="/img/tempo.jpg" alt="imgTimeMoney">
+                        </div>
+                    </div>
+                </div>
+                <div class="fotoSezione col-lg-6 col-12 d-flex justify-content-center p-5 d-none d-lg-flex">
+                    <img src="/img/tempo.jpg" alt="imgTimeMoney">
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </main>
+
+    <footer class="footerColor">
+        <!-- da aggiungere altre voci -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-white">
+                    <h3 class="mb-3">Scarica la nostra app</h3>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-6 "><img src="/img/Download_on_the_App_Store_Badge.svg" class="appleImg img-fluid w-75" alt="storeIphoneLogo"></div>
+                        <div class="col-6"><img src="/img/Google_Play_Store_badge_EN.svg" class="googleImg img-fluid w-75" alt="storeAndroidLogo"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-white">
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <h3 class="">Informazioni</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/aboutUs" class="aFake text-center">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="/tariffe" class="aFake text-center">Tariffe</a>
+                                </li>
+                                <li>
+                                    <a href="/faq" class="aFake text-center">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/abbonamenti" class="aFake text-center">Condizioni d'uso</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 ">
+                            <h3 class="mb-3">Social</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.instagram.com" class="aFake">
+                                        <i class="bi bi-instagram">Instagram</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" class="aFake">
+                                        <i class="bi bi-twitter">Twitter</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com" class="aFake">
+                                        <i class="bi bi-meta">Meta</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.telegram.com" class="aFake">
+                                        <i class="bi bi-telegram">Telegram</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- da mettere tutto in div separati, elemento per elemento -->
+                </div>
+            </div>
+            <div class="row text-white mt-4">
+                <div class="col-lg-6">
+                    <h3>Contattaci:</h3>
+                    <hr>
+                    <div class=" mb-4">
+                        <p class="boldTitle">Numeri Utili</p>
+                        <p>Numero sede italiana: <span class="aFake">0114562378</span>
+                        </p>
+                        <p>Numero verde: <span class="aFake"> 800 400 736</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Dove Trovarci</h3>
+                    <hr>
+                    <div>
+                        <p class="boldTitle">Sedi e indirizzi</p>
+                        <p>Sede Italiana: <span class="aFake">Corso Vittorio Emanuele II 157/d Torino (TO)</span>
+                        </p>
+                        <p>Sede Centrale: <span class="aFake">Thàmova 116 Karlin, Cechia</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <div class="cookie d-flex justify-content-center fCol">
+        <div class="text-white">
+            <p><span class="aFake">Cookie</span> | <a href="/faq" class="aFake">Privacy Policy</a> | <a href="/abbonamenti" class="aFake">Condizioni d'uso</a></p>
+        </div>
+
+    </div>
+    <div id="modLogout"></div>
+
+
+    <script src="/js/session.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="/js/heroSwiper.js"></script> -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".heroSwipe", {
+            spaceBetween: 0,
+            centeredSlides: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

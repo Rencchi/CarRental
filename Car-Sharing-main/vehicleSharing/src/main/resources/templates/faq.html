@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faq page of the Share Vehicle sharing company">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaQueryStyle.css">
+    <link rel="stylesheet" href="css/swiperHero.css">
+    <!-- <link rel="stylesheet" href="/css/abbonamenti.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>F.A.Q.</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark borderNav third-color fixed-top">
+            <!-- inizio navbar -->
+
+            <div class="container-lg">
+                <!-- inizio container navbar -->
+
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logoGiusto.svg" alt="logo" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-dark text-bg-dark w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- inizio offcanvas -->
+
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel"></h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <!-- inizio offcanvas-body -->
+
+                        <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3" id="navbar">
+                            <!-- inizio elementi navbar -->
+
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/">Home</a>
+                                <!-- possiamo togliere mettendo il logo diretto alla home -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/tariffe">Tariffe</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link active" aria-current="page" href="/faq">FAQ</a>
+                                <!-- tipi diversi di veicoli disp -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/abbonamenti">Abbonamenti</a>
+                                <!-- libero profesionista, abbonamenti, parcheggi -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/aboutUs">Chi siamo</a>
+                                <!-- mappa con veicoli disponibili, visibile a tutti -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/listaVeicoli">Veicoli</a>
+                                <!-- mettere i loghi delle roba si soft skill -->
+                            </li>
+
+                        </ul> <!-- fine elementi navbar -->
+                    </div>
+
+                </div> <!-- fine offcanvas-body -->
+                <!-- fine offcanvas -->
+            </div> <!-- fine container navbar -->
+        </nav> <!-- fine navbar -->
+    </header>
+
+
+    <main class="position-relative"> 
+        <!-- HERO -->
+        <div class="toast-container p-3 top-0 start-50">
+            <div class="toast text-white" data-bs-delay="1500">
+                <div class="toast-body">
+                    Sei stato disconnesso.
+                </div>
+            </div>
+        </div>
+        <div id="hero">
+            <div class="swiper heroSwipe">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(/img/vwElettrica.jpg); ">
+                        <div class="overlay">
+                            <div class="heroText">
+                                <h3 class="d-flex justify-content-start"><span class="heroTitle">Domande?</span></h3>
+                                <h3 class="heroSubtitle me-4 ">
+                                    Trova la tua <span class="primaryTextNS">domanda</span> o chiedi ad altri utenti!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEZIONE SITO MAIN -->
+
+        <main class="position-relative"> 
+
+            <!-- --------------------- FAQ ---------------------- -->
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                                ACCORDION                                -->
+            <!-- ----------------------------------------------------------------------- -->
+
+
+            <div class="container contenitoreAccord">
+                <div class="accordion accordion-flush">
+                    <div class="secondaryText mb-5 mt-3 fs-2-5">Domande frequenti</div>
+
+                    <!-- <div class="titoloFaq m-5">
+            <h2 class="primaryText mt-4 d-flex align-items-center" style="font-size: 30px;">Domande frequenti</h2>
+          </div> -->
+                    <ul>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Dove poter usare il nostro servizio?</h2>
+                            <p>Il nostro servizio di sharing è disponibile già in alcune città europee e in america. Le città europee che godono di questo servizio sono: Praga(CE), Budapest(HU), Tolosa(FR), Torino(IT), Tirana(AL), Roma(IT), Marsiglia(FR), Barcellona(SP).</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Come funziona?</h2>
+                            <p>Trova il tuo veicolo che desideri nella tua città, prenotalo al momento o prima, scansiona il codice qr riportato sul tuo veicolo, aggiungi un metodo di pagamento per pagare la corsa o abbonati, guida fino alla tua destinazione e parcheggia responsabilmente.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Come mi abbono?</h2>
+                            <p>Sul nostro sito sono disponibili vari abbonamenti per il nostro servizio tra cui 3 abbonamenti principali che permettono di avere un servizio esteso per un giorno completo, una settimana o un mese, nella sezione abbonamenti troverai tutto.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Per quanto riguarda la sicurezza?</h2>
+                            <p>I nostri veicoli sono dotati di gps che segnano in tempo reale la loro posizione, monopattini, auto e biciclette sono sempre segnate sulle nostre mappe.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Ci sono regole?</h2>
+                            <p>Certo, i nostri veicoli vanno utilizzati con coscienza e rispetto delle persone altrui e della loro sicurezza, le auto necessitano della patente della maggior età e gli altri veicoli di almeno 16 anni. Le nostre regole complete le trovi nella sezione regolamento.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Dove posso parcheggiare?</h2>
+                            <p>In alcune città il parcheggio del tuo veicolo è consentito solo in alcune sezioni o posti prestabiliti, in altre l'utente ha la libertà di parcheggiare in libertà in un posto legale, pubblico e accessibile da altri utenti senza uscire dal territorio cittadino.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Posso uscire dalla mia città?</h2>
+                            <p>La possibilità di guidare il tuo veicolo fuori la tua città è disponibile solo per le autovetture e non per gli altri veicoli. Puoi prenotare la tua auto per un viaggio al di fuori di essa e pagherai una piccola somma in più per la prenotazione estesa dal territorio cittadino.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Inquino meno con il vostro servizio?</h2>
+                            <p>Utilizzando i nostri veicoli ecosostenibili limiterai di molto le emissioni di CO2 nell'ambiente. Invece del trasporto pubblico o del tuo veicolo privato a benzina, approfitta per aiutare la tua città a diventare un luogo più pulito e sano per tutti.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="spacer"></section>
+
+            <div class="container">
+
+                <div class="sezioneDomande mb-5">
+                    <div class="secondaryText mb-5 ">
+                        <h2>Hai altre domande? Scrivici!</h2>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="mail" id="mail" placeholder="Scrivi la tua email" style="resize: none;"></textarea>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlTextarea1">Scrivi qui la tua domanda</label>
+                        <textarea class="form-control" id="faq" rows="3" style="resize: none;"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn primaryBtn mt-2" id="faqBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Invia!</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal fade modalePaginaIns" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="titoloModal"></h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="contenutoModal">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footerColor">
+            <!-- da aggiungere altre voci -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-white">
+                        <h3 class="mb-3">Scarica la nostra app</h3>
+                        <hr>
+                        <div class="row mb-3">
+                            <div class="col-6 "><img src="/img/Download_on_the_App_Store_Badge.svg" class="appleImg img-fluid w-75" alt="storeIphoneLogo"></div>
+                            <div class="col-6"><img src="/img/Google_Play_Store_badge_EN.svg" class="googleImg img-fluid w-75" alt="storeAndroidLogo"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <div class="row ">
+                            <div class="col-6 ">
+                                <h3 class="">Informazioni</h3>
+                                <hr>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/aboutUs" class="aFake text-center">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/tariffe" class="aFake text-center">Tariffe</a>
+                                    </li>
+                                    <li>
+                                        <a href="/faq" class="aFake text-center">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="/abbonamenti" class="aFake text-center">Condizioni d'uso</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 ">
+                                <h3 class="mb-3">Social</h3>
+                                <hr>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://www.instagram.com" class="aFake">
+                                            <i class="bi bi-instagram">Instagram</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com" class="aFake">
+                                            <i class="bi bi-twitter">Twitter</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com" class="aFake">
+                                            <i class="bi bi-meta">Meta</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.telegram.com" class="aFake">
+                                            <i class="bi bi-telegram">Telegram</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- da mettere tutto in div separati, elemento per elemento -->
+                    </div>
+                </div>
+                <div class="row text-white mt-4">
+                    <div class="col-lg-6">
+                        <h3>Contattaci:</h3>
+                        <hr>
+                        <div class=" mb-4">
+                            <p class="boldTitle">Numeri Utili</p>
+                            <p>Numero sede italiana: <span class="aFake">0114562378</span>
+                            </p>
+                            <p>Numero verde: <span class="aFake"> 800 400 736</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Dove Trovarci</h3>
+                        <hr>
+                        <div>
+                            <p class="boldTitle">Sedi e indirizzi</p>
+                            <p>Sede Italiana: <span class="aFake">Corso Vittorio Emanuele II 157/d Torino (TO)</span>
+                            </p>
+                            <p>Sede Centrale: <span class="aFake">Thàmova 116 Karlin, Cechia</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <div class="cookie d-flex justify-content-center fCol">
+            <div class="text-white">
+                <p><span class="aFake">Cookie</span> | <a href="/faq" class="aFake">Privacy Policy</a> | <a href="/abbonamenti" class="aFake">Condizioni d'uso</a></p>
+            </div>
+
+        </div>
+        <div id="modLogout"></div>
+
+
+        <script src="/js/session.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+        <script src="/js/faq.js"></script>
+
+</body>
+
+</html>

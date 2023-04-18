@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VehicleSharingApplication<vehicleSharing>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.desajavacidos.vehicleSharing.VehicleSharingApplication",
+            "projectName": "vehicleSharing",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

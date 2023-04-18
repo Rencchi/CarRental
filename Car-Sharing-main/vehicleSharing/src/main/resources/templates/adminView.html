@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin page of the Share Vehicle sharing company">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaQueryStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/r-2.4.0/datatables.min.css" />
+    <title>Admin Page</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+
+<body>
+
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-dark borderNav third-color fixed-top">
+            <!-- inizio navbar -->
+
+            <div class="container-lg">
+                <!-- inizio container navbar -->
+
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logoGiusto.svg" alt="logo" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-dark text-bg-dark w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- inizio offcanvas -->
+
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel"></h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <!-- inizio offcanvas-body -->
+
+                        <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3" id="navbar">
+                            <!-- inizio elementi navbar -->
+
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/">Home</a>
+                                <!-- possiamo togliere mettendo il logo diretto alla home -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/tariffe">Tariffe</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="">FAQ</a>
+                                <!-- tipi diversi di veicoli disp -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/abbonamenti">Abbonamenti</a>
+                                <!-- libero profesionista, abbonamenti, parcheggi -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/aboutUs">Chi siamo</a>
+                                <!-- mappa con veicoli disponibili, visibile a tutti -->
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="/listaVeicoli">Veicoli</a>
+                                <!-- mettere i loghi delle roba si soft skill -->
+                            </li>
+
+                        </ul> <!-- fine elementi navbar -->
+                    </div>
+
+                </div> <!-- fine offcanvas-body -->
+                <!-- fine offcanvas -->
+            </div> <!-- fine container navbar -->
+        </nav> <!-- fine navbar -->
+    </header>
+
+
+
+    <main class="position-relative"> 
+        <div class="toast-container p-3 top-0 start-50">
+            <div class="toast text-white" data-bs-delay="1500">
+                <div class="toast-body">
+                    Sei stato disconnesso.
+                </div>
+            </div>
+        </div>
+
+        <div class="bannerAdmin d-flex justify-content-center align-items-center">
+            <h1 class="bannerColor heroTitle">Sezione Admin</h1>
+        </div>
+        <div class="container mb-5">
+            <div class="text-wrap pb-3">
+                <h2 class="primaryText mt-4 d-flex align-items-center fs-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>Tabella amministrativa veicoli</h2>
+            </div>
+            <div class="table-responsive">
+                <table id="tabella" class="table-striped coloretto">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Modello</th>
+                            <th>Tipologia</th>
+                            <th>Alimentazione</th>
+                            <th>Cilindrata</th>
+                            <th>Colore</th>
+                            <th>Data Inserimento</th>
+                            <th>Disponibiltà al Noleggio</th>
+                            <th>Disponibiltà al Noleggio Prolungato</th>
+                            <th>Posizione Attuale</th>
+                            <th>Modifica</th>
+                            <th>Elimina</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footerColor">
+        <!-- da aggiungere altre voci -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-white">
+                    <h3 class="mb-3">Scarica la nostra app</h3>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-6 "><img src="/img/Download_on_the_App_Store_Badge.svg" class="appleImg img-fluid w-75" alt="storeIphoneLogo"></div>
+                        <div class="col-6"><img src="/img/Google_Play_Store_badge_EN.svg" class="googleImg img-fluid w-75" alt="storeAndroidLogo"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-white">
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <h3 class="">Informazioni</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/aboutUs" class="aFake text-center">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="/tariffe" class="aFake text-center">Tariffe</a>
+                                </li>
+                                <li>
+                                    <a href="/faq" class="aFake text-center">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/abbonamenti" class="aFake text-center">Condizioni d'uso</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 ">
+                            <h3 class="mb-3">Social</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.instagram.com" class="aFake">
+                                        <i class="bi bi-instagram">Instagram</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" class="aFake">
+                                        <i class="bi bi-twitter">Twitter</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com" class="aFake">
+                                        <i class="bi bi-meta">Meta</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.telegram.com" class="aFake">
+                                        <i class="bi bi-telegram">Telegram</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- da mettere tutto in div separati, elemento per elemento -->
+                </div>
+            </div>
+            <div class="row text-white mt-4">
+                <div class="col-lg-6">
+                    <h3>Contattaci:</h3>
+                    <hr>
+                    <div class=" mb-4">
+                        <p class="boldTitle">Numeri Utili</p>
+                        <p>Numero sede italiana: <span class="aFake">0114562378</span>
+                        </p>
+                        <p>Numero verde: <span class="aFake"> 800 400 736</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Dove Trovarci</h3>
+                    <hr>
+                    <div>
+                        <p class="boldTitle">Sedi e indirizzi</p>
+                        <p>Sede Italiana: <span class="aFake">Corso Vittorio Emanuele II 157/d Torino (TO)</span>
+                        </p>
+                        <p>Sede Centrale: <span class="aFake">Thàmova 116 Karlin, Cechia</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <div class="cookie d-flex justify-content-center fCol">
+        <div class="text-white">
+            <p><span class="aFake">Cookie</span> | <a href="/faq" class="aFake">Privacy Policy</a> | <a href="/abbonamenti" class="aFake">Condizioni d'uso</a></p>
+        </div>
+
+    </div>
+    <div id="modLogout"></div>
+
+
+    <!-- MODALE Modifica-->
+    <div class="modal fade" id="modificaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: absolute;">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="h1 modal-title fs-5" id="titoloModal">Form di Update</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="contenutoModal">Compila i seguenti campi:
+
+                    <div class="formContainer" style="min-height: 20rem;">
+                        <div class="formVeicolo mt-5" id="formVeicolo">
+                            <div class="row" id="idForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h3>Id</h3>
+                                </div>
+                                <div class="inputForm col-6">
+                                    <input type="text" class="form-control" id="id" readonly>
+                                </div>
+                            </div>
+                            <div class="row" id="tipoForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h3>Tipologia</h3>
+                                </div>
+                                <div class="selectForm col-6">
+                                    <select name="tipoVeicolo" class="form-select" id="tipo">
+                                        <option value="AUTO">AUTO</option>
+                                        <option value="BICICLETTA">BICICLETTA</option>
+                                        <option value="MONOPATTINO">MONOPATTINO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row" id="alimentazioneForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h3>Alimentazione</h3>
+                                </div>
+                                <div class="selectForm col-6">
+                                    <select name="tipoVeicolo" class="form-select" id="alimentazione">
+                                        <option value="elettrica">Elettrica</option>
+                                        <option value="ibrida">Ibrida</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row" id="modelloForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h3>Modello</h3>
+                                </div>
+                                <div class="inputForm col-6">
+                                    <!-- <input type="text" class="form-control" id="modello"> -->
+                                    <select name="modelloAuto" class="form-select" id="modello">
+                                        <option value="BMW I3-2007" data-alimentazione="elettrica">BMW I3-2007 Elettrica</option>
+                                        <option value="Golf GTE-2019" data-alimentazione="elettrica">Golf GTE 2019 Elettrica</option>
+                                        <option value="Smart FortTwo EQ 2016" data-alimentazione="elettrica">Smart FortTwo EQ 2016 Elettrica</option>
+                                        <option value="Mercedes-Benz GLC Class 2018" data-alimentazione="ibrida">Mercedes-Benz GLC Class 2018 Ibrida</option>
+                                        <option value="Toyota C-HR 2021" data-alimentazione="ibrida">Toyota C-HR 2021 Ibrida</option>
+                                        <option value="Segway Ninebot" data-alimentazione="monopattino">Segway Ninebot</option>
+                                        <option value="Flyer Uproc X" data-alimentazione="bicicletta">Flyer Uproc X</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row" id="coloreForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h4>Colore</h4>
+                                </div>
+                                <div class="inputForm col-6">
+                                    <input type="text" class="form-control" id="colore">
+                                </div>
+                            </div>
+                            <div class="row" id="cilindrataForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h4>Cilindrata</h4>
+                                </div>
+                                <div class="inputForm col-6">
+                                    <input type="text" class="form-control" id="cilindrata">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <input class="form-check-input mt-0 ms-2" type="checkbox" value="yes" aria-label="Checkbox for following text input" id="disponibile">
+                                    <label class="form-check-label ps-1" for="defaultCheck1">
+                                        Disponibile
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-check-input mt-0 ms-2" type="checkbox" value="yes" aria-label="Checkbox for following text input" id="prolungato">
+                                    <label class="form-check-label ps-1" for="defaultCheck1">
+                                        Noleggio Prolungato
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row" id="posizioneForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h4>Posizione</h4>
+                                </div>
+                                <div class="inputForm col-6">
+                                    <input type="text" class="form-control" id="posizione">
+                                </div>
+                            </div>
+                            <div class="row" hidden id="immagineForm">
+                                <div class="secondaryText col-4 d-flex justify-content-end">
+                                    <h4>Immagine</h4>
+                                </div>
+                                <div class="inputForm col-6">
+                                    <input type="text" class="form-control" id="immagine">
+                                </div>
+                            </div>
+                            <!-- <div class="row mt-4 mb-4 secondaryText" id="fotoForm">
+                                    <div class="secondaryText col-4 d-flex justify-content-end col-4">
+                                        <h4>Foto auto</h4>
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <input class="form-control" type="file" id="foto">
+                                    </div>
+                                </div> -->
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="reset" class="btn">Reset</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button id="salvaMod" type="button" class="btn primaryBtn">Salva cambiamenti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MODALE Elimina-->
+    <div class="modal fade" id="eliminaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h2 class="h1 modal-title fs-5 text-white text-bg-danger" id="titoloModale">ATTENZIONE! Stai per eliminare questo veicolo!</h2>
+                    <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="contenutoModale">
+                    <p class="lead">Sei sicuro di voler eliminare dal database questo veicolo?</p>
+
+                    <p id="error" class="lead text-danger"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">ScusaNonVolevo</button>
+                    <button id="eliminaMod" type="button" class="btn btn-danger">Elimina</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/r-2.4.0/datatables.min.js">
+    </script>
+    <script>
+        var tipo = localStorage.getItem("tipo");
+        var tipo2 = sessionStorage.getItem("tipo");
+
+        if (tipo != "A" && tipo2 != "A") {
+            window.location.assign('/paginaErrore');
+        }
+    </script>
+    <script src="/js/session.js"></script>
+    <script src="/js/dataTable.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+ @media (max-width: 415px) {
+  .heroText {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  
+  .heroTitle {
+    font-size: 30px;
+    margin-left: 1rem;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    background-color: #00B7C2;
+    height: auto;
+
+  }
+
+  .heroSubtitle {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-left: 1rem;
+    
+
+  }
+ 
+  
+  .game{
+    width: 100%;
+  }
+  .dimPagamento {
+    width: 100%;
+}
+
+.fotoCarta {
+  display: none;
+}
+  
+}
+ 
+ 
+ 
+ 
+ 
+
+
+ @media (min-width: 416px) and (max-width: 767.98px) {
+  .heroText {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .heroTitle {
+    font-size: 50px;
+    margin-left: 2rem;
+    padding: 0.75rem 0.75rem;
+    color: white;
+    background-color: #00B7C2;
+    height: auto;
+
+  }
+  
+  
+  .heroSubtitle {
+    font-size: 35px;
+    color: white;
+    text-align: left;
+    margin-left: 2rem;
+    
+
+  }
+  .game{
+    width: 100%;
+  }
+  .dimPagamento {
+    width: 100%;
+}
+  
+  .fotoCarta {
+    display: none;
+  }
+
+} 
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .heroText {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .heroTitle {
+    font-size: 60px;
+    margin-left: 3rem;
+    padding: 0.875rem 0.875rem;
+    color: white;
+    background-color: #00B7C2;
+    height: auto;
+    /* text-shadow: 3px 3px #000000 */
+  }
+  
+  .heroSubtitle {
+    font-size: 45px;
+    color: white;
+    text-align: left;
+    margin-left: 3rem;
+   
+  }
+
+  .game{
+    width: 100%;
+  }
+  .dimPagamento {
+    width: 100%;
+}
+
+.fotoCarta {
+  display: none;
+}
+ 
+}
+
+@media (min-width: 992px) {
+  .heroText {
+    width: 72%;
+    align-items: flex-start;
+  }
+  .heroTitle {
+    font-size: 70px;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: #00B7C2;
+    height: auto;
+    
+  }
+
+  /* .heroTitle2 {
+    font-size: 80px;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: #00B7C2;
+    height: auto;
+} */
+
+/* .heroTitle3 {
+  font-size: 80px;
+  padding: 1rem 1rem;
+  color: white;
+  background-color: #00B7C2;
+  height: auto;
+} */
+  
+  .heroSubtitle {
+    font-size: 70px;
+    color: white;
+    align-items: flex-start;
+   text-align: left;
+  }
+
+  /* .heroSubtitle2 {
+    text-align: center;
+    font-size: 70px;
+    padding: 1rem 1rem;
+    color: white;
+    height: auto;
+}
+
+.heroSubtitle3 {
+    text-align: center;
+    font-size: 70px;
+    padding: 1rem 1rem;
+    color: white;
+    height: auto;
+    
+} */
+
+
+  
+}
+
+@media (min-width: 1247px) {
+
+  .heroText{
+    width: 66%;
+  }
+ 
+
+}
+ 
+ 
+ @media screen and (max-width: 768px) {
+    .bannerPromo h4{
+        font-size: 12px;
+        padding: 0 0;
+    }
+
+    #spacer{
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        background-image: url('../img/spacerIndex.jpg');
+        height: 10rem;  
+    }
+    #spacer2{
+        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        background-image: url('../img/autoElettrica2.jpg');
+        height: 10rem;  
+    }
+    #spacer3{
+        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        background-image: url('../img/vwElettrica.jpg');
+        height: 10rem;  
+    }
+
+    /* .heroTitle, .heroTitle2, .heroTitle3{
+        font-size: 30px;
+        width: 10rem;
+    }
+    
+    .heroSubtitle, .heroSubtitle2, .heroSubtitle3{
+        font-size: 25px;
+    } */
+
+    .imgError{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+
+
